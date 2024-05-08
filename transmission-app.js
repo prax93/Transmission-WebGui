@@ -2398,6 +2398,7 @@
 				folder_input: i,
 				start_input: n,
 				url_input: a
+			// Modified i to read the destination
 			} = t, l = !n.checked, c = i;
 			for (let g of o.files) {
 				let d = new FileReader;
@@ -2464,6 +2465,7 @@
 			l.id = "add-dialog-folder-label", l.for = a, l.textContent = "Destination folder: ", n.append(l);
 			let u = document.createElement("span");
 
+			// Modified from Original 2466 - 2483
 			c = document.createElement("select");
 			let option1 = document.createElement("option");
 			option1.text = "/Movies";
@@ -2481,6 +2483,8 @@
 			});
 			n.append(c)
 			u.id = "free-space-text", l.append(u), n.append(l), t.freespace = u, c.value, t.folder_input;
+			// End of Modfiication
+			
 			let g = document.createElement("div");
 			n.append(g);
 			let d = document.createElement("input");

@@ -2467,12 +2467,17 @@
 
 			// Modified from Original 2466 - 2483
 			c = document.createElement("select");
+
+			let option0 = document.createElement("option");
+			option0.text = "/downloads/complete";
+
 			let option1 = document.createElement("option");
 			option1.text = "/Movies";
 
 			let option2 = document.createElement("option");
 			option2.text = "/Tv";
 
+			c.add(option0);
 			c.add(option1);
 			c.add(option2);
 
@@ -2482,9 +2487,9 @@
 
 			});
 			n.append(c)
-			u.id = "free-space-text", l.append(u), n.append(l), t.freespace = u, c.value, t.folder_input;
+			u.id = "free-space-text", l.append(u), n.append(l), t.freespace = u, c.value;
 			// End of Modfiication
-			
+
 			let g = document.createElement("div");
 			n.append(g);
 			let d = document.createElement("input");
